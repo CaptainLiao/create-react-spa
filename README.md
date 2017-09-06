@@ -1,5 +1,6 @@
 # webpack3.4.1搭建react单页应用
 本 DEMO 使用 react@15.6.1+webpack@3.4.1+es2015，都是当前最新版本，可以完整运行。
+
 **注意**：在使用之前，强烈建议过一遍[webpack3.4.1 中文指南](https://doc.webpack-china.org/guides/)
 
 两种模式，基本功能点如下：
