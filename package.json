@@ -1,6 +1,6 @@
 {
-  "name": "react_cli_step01",
-  "version": "1.0.0",
+  "name": "create-react-SPA",
+  "version": "1.0.1",
   "description": "react webpack react-app react-spa",
   "main": "index.js",
   "scripts": {
