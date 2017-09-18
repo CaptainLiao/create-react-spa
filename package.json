@@ -1,6 +1,6 @@
 {
   "name": "react-spa-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "使用 react@15.6.1+webpack@3.4.1+es2015,搭建react spa 开发和产品环境",
   "main": "index.js",
   "bin": {
