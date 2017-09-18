@@ -82,10 +82,13 @@ generator(newPath);
 npm install --save bluebird fs-extra commander chalk
 ````
 
-[bluebird](https://www.npmjs.com/package/bluebird)是一个`promise`工具库，将异步回调操作转为promise。
-[fs-extra](https://www.npmjs.com/package/fs-extra)是对`fs`的一次重写，使其变得更加好用。
-[commander](https://www.npmjs.com/package/commander)是编写node命令行的神器，可以帮助我们简化很多操作，[详见](http://blog.fens.me/nodejs-commander/)
-[chalk](https://www.npmjs.com/package/chalk)给命令行输出文字上色。
+[bluebird](https://www.npmjs.com/package/bluebird)：是一个`promise`工具库，将异步回调操作转为promise。
+
+[fs-extra](https://www.npmjs.com/package/fs-extra)：是对`fs`的一次重写，使其变得更加好用。
+
+[commander](https://www.npmjs.com/package/commander)：是编写node命令行的神器，可以帮助我们简化很多操作，[详见](http://blog.fens.me/nodejs-commander/)
+
+[chalk](https://www.npmjs.com/package/chalk)：给命令行输出文字上色。
 
 此时，执行：`react-cli my-pro` 就会在当前目录生成一个`my-pro`文件夹，其中包含了`templates`中的所有内容。 
 
