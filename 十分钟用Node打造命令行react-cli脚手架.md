@@ -18,6 +18,7 @@
 npm init
 ````
 执行上面的命令，自动生成`package.json`文件，[详见](https://docs.npmjs.com/cli/init)，项目名字就叫`react-cli`。
+
 **2、创建运行命令的脚本**
 bin/index.js
 ````
@@ -25,6 +26,7 @@ bin/index.js
 console.log('Hello node cli');
 ````
 然后在控制台中执行`node bin/index.js`就会输出`Hello node cli`
+
 **3、链接到npm**
 在已经创建好的`package.json`文件中加入下面的字段：
 ````
@@ -35,6 +37,7 @@ console.log('Hello node cli');
 ...
 ````
 package.json中有一个"bin"字段，配置后才可以在控制台使用你的命令。
+
 **4、全局安装你的包**
 要使`react-cli`作为全局命令，还需要将它安装到全局，有两种方式：`npm link` or `npm install . -g`
 
@@ -94,6 +97,7 @@ npm install --save bluebird fs-extra commander chalk
 
 ### 三、发布到 npm 仓库
 1、在npm上注册一个账号，[去注册](https://www.npmjs.com/signup)
+
 2、回到项目中，登录
 ```
 npm login
