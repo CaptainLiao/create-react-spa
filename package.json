@@ -4,7 +4,7 @@
   "description": "使用 react@15.6.1+webpack@3.4.1+es2015,搭建react spa 开发和产品环境",
   "main": "index.js",
   "bin": {
-    "react-spa-cli": "./index.js"
+    "react-spa-cli": "./bin/index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,6 +15,8 @@
   "repository": "https://github.com/CaptainLiao/create-react-spa.git",
   "dependencies": {
     "bluebird": "^3.5.0",
+    "chalk": "^2.1.0",
+    "commander": "^2.11.0",
     "fs-extra": "^4.0.2"
   }
 }

@@ -3,15 +3,27 @@
 let Promise = require('bluebird')
 let fs = Promise.promisifyAll(require('fs-extra'))
 
-let tem = __dirname + '\\templates';
-function generator(pro) {
-  return fs.copyAsync(tem, pro, {clobber: true})
-    .then((err) => {
-      if(err) return console.log(err)
+let program = require('commander')
+let chalk = require('chalk')
+let _v = require('../package.json').version;
+
+program
+.version(_v)
+.usage('react-spa-cli name')
+.parse(process.argv)
+
+let tem = __dirname.replace('\\bin', '') + '\\templates';
+let newPath = program.args[0];
+function generator(dest) {
+  return fs.copyAsync(tem, dest, {clobber: true})
+    .then(() => {
+      console.log('\n' + chalk.green(dest) + ` project is created successfully by react-spa-cli@${_v}.\n`)
+      console.log(chalk.green(`cd ${dest}`) + ` to checkout.\n`)
     })
+    .catch(err => console.log(chalk.red(`cd ${err}`)))
 }
 
-generator('react');
+generator(newPath);
 
 // var fs = require('fs')
 // var fpath = require('path')

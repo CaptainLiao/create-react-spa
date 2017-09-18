@@ -12,9 +12,7 @@ npm install -g react-spa-cli
 
 创建工程，并且换到新建目录下：
 ````
-react-spa-cli my-project
-
-cd my-project
+react-spa-cli my-project & cd my-project
 ````
 
 安装依赖：
