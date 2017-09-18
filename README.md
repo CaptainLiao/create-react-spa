@@ -30,7 +30,7 @@ npm start
 // 生产环境
 npm run build
 ````
-
+## 基本功能
 **注意**：在使用之前，强烈建议过一遍[webpack3.4.1 中文指南](https://doc.webpack-china.org/guides/)
 
 两种模式，基本功能点如下：
