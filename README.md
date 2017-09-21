@@ -21,10 +21,13 @@ npm install
 ````
 
 运行程序：
+
 开发环境
 ````
 npm start
 ````
+然后在浏览器中输入：http://localhost:3000/，就能看到页面啦。
+
 生产环境
 ````
 npm run build
