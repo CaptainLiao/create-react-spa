@@ -42,8 +42,10 @@ module.exports = {
     libraryTarget: 'umd'
   },
 
-  // resolve 自动添加后缀，默认使用.js
-  // 空字符串是为了resolve一些在import文件时不带文件扩展名的表达式
+  // resolve 配置用来影响webpack模块解析规则
+  // extensions：使用户在引入模块时不带扩展，extensions会自动解析，默认使用.js
+  // modules：告诉 webpack 解析模块时应该搜索的目录
+  // mainFiles：解析目录时要使用的文件名。默认index
   // 解决引入 antd-mobile 时 Cant't resolve 'react-native' 报错
   resolve: {
     mainFiles: ['index.web', 'index'],// 这里哦
@@ -61,10 +63,11 @@ module.exports = {
     ],
   },
 
+  // externals 提供了「不从 bundle 中引用依赖」的方式
+  // 例如：在组件中 import React from 'react',这里的 'react' 就指向CDN引入的 'React'全局对象
   externals: {
     // 通过cdn引入 react.min.js ,exports.React 全局对象
     // 通过cdn引入 react-router-dom.min.js ,exports.ReactRouterDOM 全局对象
-    // 在组件中 import React from 'react',这里的 'react' 就指向CDN引入的 'React'全局对象
     'react': 'React',
     'react-dom': 'ReactDOM',
     'react-router-dom': 'ReactRouterDOM',
