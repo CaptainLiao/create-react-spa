@@ -63,11 +63,12 @@ module.exports = {
     ],
   },
 
-  // externals 提供了「不从 bundle 中引用依赖」的方式
-  // 例如：在组件中 import React from 'react',这里的 'react' 就指向CDN引入的 'React'全局对象
+  // externals 外部扩展配置提供了「不从 bundle 中引用依赖」的方式
+  // 在组件中 import React from 'react',这里的 'react' 就指向CDN引入的 'React'全局对象
   externals: {
     // 通过cdn引入 react.min.js ,exports.React 全局对象
     // 通过cdn引入 react-router-dom.min.js ,exports.ReactRouterDOM 全局对象
+
     'react': 'React',
     'react-dom': 'ReactDOM',
     'react-router-dom': 'ReactRouterDOM',
